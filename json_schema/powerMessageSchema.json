@@ -1,0 +1,30 @@
+{
+    "title": "Energy Mqtt topic",
+    "type": "object",
+    "properties": {
+        "Time": {
+            "desciption": "Not full RFC3339 conform date string, so type date-time does not match!",
+            "type": "string",
+            "pattern": "(\\d+)-(0[1-9]|1[012])-(0[1-9]|[12]\\d|3[01])[Tt]([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d|60)"
+        },
+        "Current": {
+            "description": "measured current",
+            "type": "number",
+            "minimum": 0
+        },
+        "Voltage": {
+            "description": "measured voltage",
+            "type": "integer",
+            "minimum": 0
+        },
+        "Power": {
+            "description": "measured power",
+            "type": "integer",
+            "minimum": 0
+        }
+    },
+    "additionalProperties": true,
+    "required": [
+        "Power"
+    ]
+}

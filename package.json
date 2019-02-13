@@ -1,0 +1,31 @@
+{
+  "name": "energy_monitor_to_influx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "debug": "node --nolazy --inspect-brk=9229 ./dist",
+    "start": "node ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.23",
+    "ajv": "^6.6.2",
+    "eventemitter-ts": "0.0.4",
+    "influx": "^5.0.7",
+    "moment": "^2.22.2",
+    "mqtt": "^2.18.8"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "json-schema-to-typescript": "^6.1.1",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}
